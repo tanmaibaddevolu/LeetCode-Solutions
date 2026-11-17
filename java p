@@ -1,0 +1,31 @@
+import java.util.*;
+// find the biggest and smallest number in 3 numbers
+public class Main {
+    public static void main() {
+       // we take the input
+      Scanner sc = new Scanner(System.in);
+      int x = sc.nextInt();
+      int y = sc.nextInt();
+      int z = sc.nextInt();
+      // process the input
+      int mx;
+    if(x > y){
+      if(x > z){
+         mx = x;
+        }
+        else{
+           mx=z;  
+        } 
+      }
+    else{
+      if(y>z){
+          mx = y;
+        }
+        else{
+         mx=z;
+      }
+    }
+     // display output
+      System.out.print(mx);
+    }
+};
